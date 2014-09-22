@@ -80,5 +80,4 @@ public class MagazynController {
 		model.addAttribute(new Towar());
 		return "magazyn";
 	}
-
 }

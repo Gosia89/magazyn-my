@@ -3,13 +3,14 @@
 <html>
 <head>
 	<title>Home</title>
+        <meta charset=ISO-8859-1">
 </head>
 <body>
 <h1>
-	Hello world!  
+	Wejd? do magazynu  
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P>  Czas na serwerze: ${serverTime}. </P>
 
 <ul>
 		<li>
