@@ -3,11 +3,11 @@
 <html>
 
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Magazyn</title>
         <style>
             div   {
-                alignment-adjust: center;
+                alignment-adjust: right;
                 width: 300px;
                 padding: 10px;
                 margin: 0;  
@@ -24,6 +24,7 @@
                 background-color: #eee;
                 border: 1px solid black;
                 border-collapse: collapse;
+                alignment-adjust: right;
             }
             table#t02 tr:nth-child(odd) {
                 background-color:#fff;
@@ -31,22 +32,23 @@
                 border-collapse: collapse;
             }
             table#t02 th	{
+                color: beige;
                 background-color: black;
                 border: 1px solid black;
                 border-collapse: collapse;
             }
             table#t02 td	{
-                 border: 1px solid black;
+                border: 1px solid black;
                 border-collapse: collapse;
             }
 
             body {background-color:lightgrey}
             h1   {color:blue; font:arial}
             p    {color:green}
-            a:link    {color:#000000; background-color:transparent}
-            a:visited {color:#002EB8; background-color:transparent}
-            a:hover   {color:#3D3D3D; background-color:transparent}
-            a:active  {color:#990000; background-color:transparent}
+            a:link    {color:black; background-color:transparent}
+            a:visited {color:beige; background-color:transparent}
+            a:hover   {color:green; background-color:transparent}
+            a:active  {color:red; background-color:transparent}
         </style>
 
     </head>
@@ -69,7 +71,7 @@
                 <tr><td>Cena:</td> 
                     <td><form:input path="cena" /></td>
                 </tr>
-                <tr><td>Ilosc:</td> 
+                <tr><td>Ilo??:</td> 
                     <td><form:input path="ilosc" /></td>
                 </tr>
                 <tr><td>Kategoria:</td> 
@@ -100,14 +102,14 @@
         <table id="t02">
             <!-- Nag?ówki tabeli towarów-->
             <tr>
-                <th><a href="magazyn?sort=0">Id</a></th>
+                <th><a id="a02" id="a03" href="magazyn?sort=0">Id</a></th>
                 <th><a href="magazyn?sort=1">Nazwa</a></th>
                 <th><a href="magazyn?sort=2">Opis</a></th>
                 <th><a href="magazyn?sort=3">Cena</a></th>
-                <th><a href="magazyn?sort=4">Ilosc</a></th>
+                <th><a href="magazyn?sort=4">Ilo&#347&#263</a></th>
                 <th><a href="magazyn?sort=5">Kategoria</a></th>
-                <th>Usu&#324;</th>
-                <th>Zmie&#324;</th>
+                <th>Usu&#324</th>
+                <th>Zmie&#324</th>
             </tr>
             <!-- z bazy danych wyci?ga do tabeli zapisane towary-->
             <c:forEach var="towar" items="${magazyn}">
